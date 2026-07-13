@@ -16,6 +16,11 @@ src-tauri/gen
 .env
 .env.*
 
+# Generated synthetic M365 fixture and local-only feasibility evidence.
+fixtures/m365/synthetic-review.docx
+.m365-feasibility-runtime/
+docs/evidence/m365-tauri-feasibility/local-private/
+
 # internal orchestration docs — kept local-only, NOT published to the public repo
 .orchestration/
 plans/

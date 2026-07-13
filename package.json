@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:injected": "esbuild injected/bootstrap.ts injected/engine.ts --bundle --format=iife --platform=browser --target=es2020 --outdir=src-tauri/gen/injected",
+    "generate:m365-fixture": "node scripts/generate-m365-fixture.mjs",
+    "check:m365-fixture": "node scripts/check-m365-fixture.mjs",
     "agent:doctor": "node scripts/agent/doctor.mjs",
     "agent:launch": "node scripts/agent/launch.mjs",
     "agent:status": "node scripts/agent/status.mjs",
@@ -17,7 +19,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
-    "verify": "pnpm build:injected && pnpm typecheck && pnpm lint && pnpm test && node scripts/check-adapters.mjs"
+    "verify": "pnpm build:injected && pnpm typecheck && pnpm lint && pnpm test && node scripts/check-adapters.mjs && pnpm generate:m365-fixture && pnpm check:m365-fixture"
   },
   "dependencies": {
     "@tauri-apps/api": "2.11.1",

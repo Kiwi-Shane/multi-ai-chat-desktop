@@ -19,7 +19,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
-    "verify": "pnpm build:injected && pnpm typecheck && pnpm lint && pnpm test && node scripts/check-adapters.mjs && pnpm check:m365-fixture"
+    "verify": "pnpm build:injected && pnpm typecheck && pnpm lint && pnpm test && node scripts/check-adapters.mjs && pnpm generate:m365-fixture && pnpm check:m365-fixture"
   },
   "dependencies": {
     "@tauri-apps/api": "2.11.1",
@@ -33,7 +33,7 @@
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^3.4.0",
     "ajv": "^8.17.1",
     "autoprefixer": "^10.4.20",
     "esbuild": "^0.24.2",

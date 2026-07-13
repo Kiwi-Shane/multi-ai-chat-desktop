@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "classification": "synthetic_public",
+  "file": "synthetic-review.docx",
+  "sha256": "5e489cc5a9c7028b56cdd787617299e63d61f2b8aa437b8095fe061ebd9a89f6",
+  "expectedFacts": [
+    "BIRCH-47",
+    "41.7",
+    "17"
+  ],
+  "containsRealData": false
+}
